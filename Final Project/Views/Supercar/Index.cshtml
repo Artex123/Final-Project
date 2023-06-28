@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Supercar>
+
+<h2>Supercars</h2>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Horsepower</th>
+        <th>Top Speed</th>
+        <th>Price</th>
+    </tr>
+
+    @foreach (var supercar in @Model)
+    {
+        <tr>
+            <td><a href=/Supercar/ViewSupercar/@supercar.Id>@supercar.Id</a></td>
+            <td>@supercar.Brand</td>
+            <td>@supercar.Model</td>
+            <td>@supercar.Horsepower</td>
+            <td>@supercar.Top_speed</td>
+            <td>@supercar.Price</td>
+        </tr>
+    }
+
+</table>
