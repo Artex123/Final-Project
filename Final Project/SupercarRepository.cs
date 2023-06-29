@@ -31,7 +31,7 @@ namespace Final_Project
 
         public void RemoveSupercar(Supercar supercarToRemove)
         {
-            _conn.Execute("DELETE from games where id = @id", new { id = supercarToRemove.Id });
+            _conn.Execute("DELETE from supercars where id = @id", new { id = supercarToRemove.Id });
         }
 
         public void UpdateSupercar(Supercar supercar)
