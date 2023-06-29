@@ -1,0 +1,27 @@
+﻿@model Supercar
+
+<h2>Create a New Supercar</h2>
+
+@using (Html.BeginForm("AddSupercarToDatabase", "Supercar", "Post"))
+{
+    <input asp-for="Id" type="hidden" value="" />
+
+    <label asp-for="Brand" class="control-label">Brand</label>
+    <input type="text" name="Brand" class="form-control" value="" />
+
+    <label asp-for="Model" class="control-label">Model</label>
+    <input type="text" name="Model" class="form-control" value="" />
+
+    <label asp-for="Horsepower" class="control-label">Horsepower</label>
+    <input type="number" step="0.01" name="Horsepower" class="form-control" />
+
+    <label asp-for="Top_speed" class="control-label">Top Speed</label>
+    <input type="number" step="0.01" name="Top_speed" class="form-control" />
+
+    <label asp-for="Price" class="control-label">Price</label>
+    <input type="number" step="0.01" name="Price" class="form-control" />
+
+    
+
+    <input type="submit" value="Create Supercar" class="btn btn-primary" />
+}

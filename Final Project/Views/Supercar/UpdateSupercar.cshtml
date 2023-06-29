@@ -1,0 +1,26 @@
+﻿@model Supercar
+
+<h2>Update @Model.Brand</h2>
+
+@using (Html.BeginForm("UpdateSupercarToDatabase", "Supercar", "Post"))
+{
+    <input asp-for="Id" type="hidden" value="@Model.Id" />
+
+    <label asp-for="Brand" class="control-label">Brand</label>
+    <input type="text" name="Brand" class="form-control" value="@Model.Brand" />
+
+    <label asp-for="Model" class="control-label">Model</label>
+    <input type="text" name="Model" class="form-control" value="@Model.Model" />
+
+    <label asp-for="Horsepower" class="control-label">Horsepower</label>
+    <input type="number" step="0.01" name="Horsepower" class="form-control" value="@Model.Horsepower" />
+
+    <label asp-for="Top_speed" class="control-label">Top Speed</label>
+    <input type="number" step="0.01" name="Top_speed" class="form-control" value="@Model.Top_speed" />
+
+    <label asp-for="Price" class="control-label">Price</label>
+    <input type="number" step="0.01" name="Price" class="form-control" value="@Model.Price" />
+
+    <input type="submit" value="Update Supercar" class="btn btn-primary" />
+
+}
