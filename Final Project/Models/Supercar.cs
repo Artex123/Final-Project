@@ -8,5 +8,6 @@
         public int Horsepower { get; set; }
         public decimal Top_speed { get; set; }
         public decimal Price { get; set; }
+        public string ImageURL { get; set; }
     }
 }

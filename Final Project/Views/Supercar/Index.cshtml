@@ -13,6 +13,7 @@
         <th>Horsepower</th>
         <th>Top Speed</th>
         <th>Price</th>
+        <th>Image</th>
     </tr>
 
     @foreach (var supercar in @Model)
@@ -24,6 +25,7 @@
             <td>@supercar.Horsepower</td>
             <td>@supercar.Top_speed</td>
             <td>@supercar.Price</td>
+            <td><img src="@supercar.ImageURL" style="height: 40px; width:auto; border-radius: 3px;box-shadow: 0 10px 10px 0 rgba(10, 11, 14, 0.6);" /></td>
         </tr>
     }
 
