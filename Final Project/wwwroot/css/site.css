@@ -1,5 +1,6 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: "Audiowide", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -28,4 +29,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }*/
+
+h1,
+h2,
+p,
+table {
+    font-family: "Audiowide", sans-serif;
+}
 
