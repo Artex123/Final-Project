@@ -20,7 +20,11 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-color: darkgray; 
+    /*background-color: darkgray;*/
+    /*background: rgb(2,5,5);
+    background: linear-gradient(50deg, rgba(2,15,5,1) 0%, rgba(9,9,121,1) 5%, rgba(0,212,50,1) 100%);*/
+    background: rgb(172,182,172);
+    background: linear-gradient(90deg, rgba(172,182,172,1) 0%, rgba(203,241,203,1) 65%, rgba(192,197,215,1) 100%);
 }
 /*#video-box {
     position: absolute;
